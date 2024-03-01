@@ -1,0 +1,36 @@
+// Fingerprint Analysis
+digraph {
+	A [label="Read Image"]
+	B [label="Locate Triradius and Core"]
+	C [label="Preprocess Image"]
+	D [label="Filter Image"]
+	E [label="Convert to Grayscale"]
+	F [label=Thresholding]
+	G [label="Find Triradius and Core Contours"]
+	H [label="Exclude Triradius Contour"]
+	I [label="Find Core Contour"]
+	J [label="Count Ridges between Triradius and Core"]
+	K [label="Convert Image to Grayscale (if needed)"]
+	L [label="Enhance Ridges using Custom Kernel"]
+	M [label="Create Mask using ROI Contour"]
+	N [label="Apply Mask to Ridge-Enhanced Image"]
+	O [label="Binarize Result"]
+	P [label="Count Ridges"]
+	Q [label="Display Results"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+	K -> L
+	L -> M
+	M -> N
+	N -> O
+	O -> P
+	P -> Q
+}
