@@ -47,7 +47,7 @@ def count_ridges_between_triradius_core(image_path, triradius, core):
 
     return ridge_count_result
 
-image_path = "test4.jpg"
+image_path = "img3.png"
 triradius, core = locate_triradius_core(image_path)
 ridge_count_result = count_ridges_between_triradius_core(image_path, triradius, core)
 
